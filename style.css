@@ -10,11 +10,12 @@ body{
 .container{
 	display:flex;
 	justify-content: center; 
-	align-items: center;
-	height: 100vh;
+	height: 150vh;
 }
 
 .ticket{
+	position: fixed;
+	margin-top: 2rem;
 	background-color: #fff; 
 	height:7rem;
 	width:15rem;
@@ -22,13 +23,13 @@ body{
 }
 .ticket::before{
 	content: '';
-	position:absolute;
+	position: absolute;
 	border-radius: 0 100% 100% 0;
 	background: #DBB1CD;
 	height: 3rem;
 	width:2.5rem;
 	margin-top:2rem;
-
+	margin-left: -.2rem;
 }
 .ticket::after{
 	content: '';
@@ -37,17 +38,27 @@ body{
 	background: #DBB1CD;
 	height: 3rem;
 	width:2.5rem;
-	margin-top:2rem;
-	margin-left:12.5rem; 
-}
-.back-line{
-	z-index:-1;
-	position: absolute;
-	width:3rem;
-	height:100vh;
-	background-color: #000;
+	margin-top: 2rem;
+	margin-left:12.7rem; 
 }
 
+.side{
+	z-index: 2;
+	position: fixed;
+	background-color: #fff; 
+	height:5rem;
+	width:10rem;
+	margin-left: .1rem;
+	margin-top: 2rem;	
+	border-top: 10px solid #F6D155;
+}
+.back-line{
+	z-index:1;
+	position: static;
+	width:3rem;
+	height:100vh;
+	background-color: #CE3175;
+}
 
 
 
