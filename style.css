@@ -18,4 +18,39 @@ body{
 	background-color: #fff; 
 	height:7rem;
 	width:15rem;
+	box-shadow: inset 2px 2px 0px 8px #F6D155;
 }
+.ticket::before{
+	content: '';
+	position:absolute;
+	border-radius: 0 100% 100% 0;
+	background: #DBB1CD;
+	height: 3rem;
+	width:2.5rem;
+	margin-top:2rem;
+
+}
+.ticket::after{
+	content: '';
+	position: absolute;
+	border-radius: 100% 0 0 100%;
+	background: #DBB1CD;
+	height: 3rem;
+	width:2.5rem;
+	margin-top:2rem;
+	margin-left:12.5rem; 
+}
+.back-line{
+	z-index:-1;
+	position: absolute;
+	width:3rem;
+	height:100vh;
+	background-color: #000;
+}
+
+
+
+
+
+
+
