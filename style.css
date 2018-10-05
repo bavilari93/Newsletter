@@ -70,19 +70,41 @@ body{
 	border-top:6rem solid  #CE3175;
 	border-left: 5rem solid transparent;
 	border-right: 5rem solid transparent; 
-	margin-top:34rem;
+	margin-top:35rem;
 	margin-left:-3.5rem;
 }
 
 .content{
 	align-self: center;
-
 	background-color: black;
 	height: 10rem;
 	width: 20rem;
 	margin-left: -30rem;
 }
+.main{
+	position: absolute;
+	margin-top: 43rem;
+	text-transform: uppercase;
+	font-weight: 200;
+}
 
-
-
+@media only screen and (max-width:480px){
+	.back-line::before{
+		margin-top: 40rem;
+	}
+	.main{
+		margin-top: 46rem;
+	}
+}
+@media only scree and (orientation:landscape),(max-height:480px){
+	.back-line::before{
+		margin-top: 30rem;
+	}
+	.main{
+		margin-top: 50rem;
+	}
+	.content{
+		margin-top: -10rem;
+	}
+}
 
